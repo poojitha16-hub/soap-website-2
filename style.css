@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ece9e4;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+}
+
+.brand-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #B0003A; /* dark pink */
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #B0003A;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  height: 60vh;
+  margin-top: 80px;
+  position: relative;
+}
+
+.hero-left,
+.hero-right {
+  width: 50%;
+}
+
+.hero-left img,
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tagline */
+.tagline-container {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+
+.tagline {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #A5003A; /* dark pink */
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.5s ease-in-out;
+}
+
